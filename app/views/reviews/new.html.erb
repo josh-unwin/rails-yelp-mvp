@@ -1,0 +1,13 @@
+<div class="container">
+  <div class="row">
+    <div class="col-6 mx-auto my-4">
+      <h2>Add your review</h2>
+
+      <%= simple_form_for [ @restaurant, @review ] do |f| %>
+      <%= f.input :content %>
+      <%= f.input :rating %>
+      <%= f.button :submit %>
+      </div>
+  </div>
+<% end %>
+</div>
